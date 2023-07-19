@@ -1,0 +1,97 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main{
+  width: 100%;
+}
+
+nav{
+  width: 100%;
+ /* background-color: black;*/
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo a{
+   font-size: 30px;
+   color: red;
+   font-weight: bold;
+   margin-left: 100px;
+}
+
+a{
+  text-decoration: none;
+  color: orange;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+nav ul{
+  margin: 0px;
+  margin-right: 100px;
+}
+
+nav ul li{
+  float: left;
+  padding: 0px 10px;
+  list-style: none;
+}
+
+nav ul li a:hover{
+  display: block;
+  color: red;
+}
+ul ul{
+  display: none;
+}
+
+.header{
+  background-image: url('multiple.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.content{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: whitesmoke;
+  text-align: center;
+}
+
+.content h1{
+  font-size: 30px;
+}
+
+.content p{
+  padding: 0px 70px;
+  font-size: 16px;
+}
+
+button{
+  background: none;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 6px;
+}
+
+button:hover{
+  background: red;
+  color: whitesmoke;
+}
+
+.over{
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+}
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='login.css')}}">
+	<script type="text/javascript">
+		function hello()
+		{
+			window.alert("login successfully")
+		}
+	</script>
+
+</head>
+<body>
+
+	<form action="loginvalidation" method="POST">
+<div class="loginb">
+	<h1>Login</h1>
+	<div class="textbox">
+		<input type="text" name="uname" placeholder="Username" required>
+	</div>
+
+	<div class="textbox">
+		<input type="password" name="passw" placeholder="Password" required>
+	</div>
+	
+    <a href="rest"><input  type="submit" class="button" name="log" value="LogIn"></a>
+    <a href="reg">New Registration</a>
+</div>
+</form>
+
+</body>
+</html>

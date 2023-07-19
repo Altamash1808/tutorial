@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='registration.css')}}">
+    
+        <script type="text/javascript">
+        function hello()
+        {
+            window.alert("Registration Successfull")
+        }
+    </script>
+</head>
+<body>
+	<div class="container">
+
+    <form id="signup" action="addEmp" method="POST">
+
+        <div class="header">
+        
+            <h3>Register</h3>
+            
+        </div>
+        
+        <div class="sep"></div>
+
+        <div class="inputs">
+        	<input type="text" name="fname" placeholder="First Name" required>
+        	<input type="text" name="lname" placeholder="Last Name" required>
+        	<input type="text" name="contact" placeholder="contact" required>
+        
+            <input type="email" name="uname" placeholder="e-mail" required autofocus />
+        
+            <input type="password" name="pass" placeholder="Password" required />
+            
+            <div class="checkboxy">
+                <input name="cecky"  id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>
+            </div>
+
+            <button type="submit" value="Save">Register</button>
+            
+            <a href="home2" onclick="hello()" style="color: black;" value="save">Register</a>
+        
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
